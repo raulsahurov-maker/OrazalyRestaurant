@@ -1,0 +1,635 @@
+<!-- test -->
+Привет<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orazali — ресторан и банкетный зал в Аскара Токпанова</title>
+<meta name="description" content="Ресторан и банкетный зал Orazali: тои, юбилеи и семейные праздники до 150 гостей. Банкетное меню от 11 000 ₸ с человека. Ежедневно 10:00–23:00, ул. Кенена Азербаева, 109л, с. Аскара Токпанова.">
+<meta property="og:title" content="Orazali — ресторан и банкетный зал">
+<meta property="og:description" content="Банкеты до 150 гостей, меню от 11 000 ₸ с человека. Казахская и восточная кухня. Ежедневно 10:00–23:00.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#110D09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23110D09'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23D4AF5A'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Forum&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"name": "Orazali",
+"description": "Ресторан и банкетный зал. Казахская и восточная кухня, банкеты до 150 гостей.",
+"servesCuisine": ["Казахская кухня", "Восточная кухня"],
+"telephone": ["+77076371737", "+77029208550"],
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "ул. Кенена Азербаева, 109л",
+"addressLocality": "с. Аскара Токпанова",
+"addressRegion": "Алматинская область, Илийский район",
+"addressCountry": "KZ"
+},
+"geo": { "@type": "GeoCoordinates", "latitude": 43.392991, "longitude": 76.858334 },
+"openingHours": "Mo-Su 10:00-23:00",
+"acceptsReservations": true,
+"sameAs": ["https://instagram.com/orazali_restaurant"]
+}
+</script>
+<style>
+:root{
+--black:#110D09;
+--panel:#1A140E;
+--panel-2:#221A12;
+--line:rgba(212,175,90,.3);
+--line-soft:rgba(212,175,90,.14);
+--gold:#D4AF5A;
+--gold-hi:#F3DFA2;
+--gold-lo:#9C7430;
+--ivory:#F1E9DA;
+--muted:#A99D89;
+--foil:linear-gradient(180deg,#FCF0C6 0%,#E4C06F 36%,#B3842F 60%,#E9CD86 82%,#C99A45 100%);
+--serif:'Alegreya',Georgia,'Times New Roman',serif;
+--display:'Forum','Alegreya',Georgia,serif;
+--wrap:1120px;
+--pad:clamp(1.25rem,4vw,2.5rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--black);color:var(--ivory);font:400 1.125rem/1.65 var(--serif);font-kerning:normal;text-rendering:optimizeLegibility}
+img,iframe{display:block;max-width:100%}
+a{color:var(--gold-hi);text-decoration-color:rgba(243,223,162,.45);text-underline-offset:.18em}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:4px}
+h1,h2,h3,p{margin:0}
+.wrap{width:min(100% - 2*var(--pad),var(--wrap));margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* ornament rule from the posters: —◆— */
+.rule{display:flex;align-items:center;gap:.7rem;width:min(240px,64%);margin-inline:auto;color:var(--gold)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,currentColor)}
+.rule::after{background:linear-gradient(270deg,transparent,currentColor)}
+.rule i{width:7px;height:7px;background:currentColor;transform:rotate(45deg);flex:none}
+.foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.7rem 1.5rem;border-radius:999px;font:500 1.0625rem/1.2 var(--serif);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:filter .2s,background-color .2s,border-color .2s}
+.btn-gold{background:var(--foil);color:#1A1209;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 8px 24px -10px rgba(212,175,90,.6)}
+.btn-gold:hover{filter:brightness(1.08)}
+.btn-line{border-color:var(--line);color:var(--ivory);background:rgba(17,13,9,.4)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-hi)}
+.btn svg{width:1.1em;height:1.1em;flex:none}
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(17,13,9,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.top .wrap{display:flex;align-items:center;gap:2rem;height:64px}
+.brand{font:400 1.5rem/1 var(--display);letter-spacing:.1em;text-decoration:none;color:var(--gold)}
+.nav{display:flex;gap:1.75rem;margin-left:auto}
+.nav a{color:var(--ivory);text-decoration:none;font-size:1.0625rem;opacity:.85}
+.nav a:hover{opacity:1;color:var(--gold-hi)}
+.top-phone{font:500 1.0625rem/1 var(--serif);color:var(--gold-hi);text-decoration:none;white-space:nowrap}
+@media (max-width:860px){.nav{display:none}.top-phone{margin-left:auto}}
+/* hero with the gold curtains */
+.hero{position:relative;overflow:hidden;min-height:min(92vh,860px);display:grid;place-items:center;padding:7rem var(--pad) 5rem;text-align:center;
+background:radial-gradient(ellipse 60% 55% at 50% 38%,#2C2014 0%,rgba(17,13,9,0) 70%),var(--black)}
+.valance{position:absolute;inset:0 0 auto;height:38px;z-index:3;
+background:linear-gradient(180deg,#6E4C18,#C79B49 55%,#8E6623);box-shadow:0 6px 16px rgba(0,0,0,.5)}
+.valance::after{content:"";position:absolute;left:0;right:0;top:100%;height:22px;
+background:radial-gradient(circle at 50% 0,#A47A30 0 21px,transparent 22px) 0 0/46px 22px repeat-x;filter:drop-shadow(0 4px 4px rgba(0,0,0,.45))}
+.curtain{position:absolute;top:0;bottom:0;width:50%;z-index:2;--open:.24;
+background:
+linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,0) 22%,rgba(0,0,0,0) 72%,rgba(0,0,0,.6)),
+repeating-linear-gradient(90deg,#5A3E13 0,#9E742B 12px,#E3C47A 23px,#C49A47 31px,#7A5520 44px,#5A3E13 52px);
+animation:open-l 2.2s cubic-bezier(.65,.02,.2,1) .35s both}
+.curtain.l{left:0;transform-origin:0 50%;
+clip-path:polygon(0 0,100% 0,96% 18%,84% 40%,52% 60%,66% 78%,86% 100%,0 100%)}
+.curtain.r{right:0;transform-origin:100% 50%;
+clip-path:polygon(0 0,100% 0,100% 100%,14% 100%,34% 78%,48% 60%,16% 40%,4% 18%)}
+.curtain.l{animation-name:open-l}
+.curtain.r{animation-name:open-r}
+@keyframes open-l{
+from{transform:scaleX(1);clip-path:polygon(0 0,100% 0,100% 18%,100% 40%,100% 60%,100% 78%,100% 100%,0 100%)}
+to{transform:scaleX(var(--open));clip-path:polygon(0 0,100% 0,96% 18%,84% 40%,52% 60%,66% 78%,86% 100%,0 100%)}
+}
+@keyframes open-r{
+from{transform:scaleX(1);clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 78%,0 60%,0 40%,0 18%)}
+to{transform:scaleX(var(--open));clip-path:polygon(0 0,100% 0,100% 100%,14% 100%,34% 78%,48% 60%,16% 40%,4% 18%)}
+}
+.hero-in{position:relative;z-index:1;max-width:44rem}
+.wordmark{font:400 clamp(3.4rem,12.5vw,8.75rem)/.95 var(--display);letter-spacing:.05em;margin-bottom:.35em;filter:drop-shadow(0 2px 0 rgba(0,0,0,.6))}
+.wordmark .q{letter-spacing:0}
+.kind{font:italic 500 clamp(1.4rem,3.2vw,2rem)/1.2 var(--serif);color:var(--ivory);margin-bottom:1.4rem}
+.lede{font-size:clamp(1.125rem,2vw,1.3rem);color:var(--ivory);max-width:34rem;margin:1.6rem auto 2.2rem}
+.lede b{font-weight:500;color:var(--gold-hi)}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem}
+.hero-meta{margin-top:2.4rem;color:var(--muted);font-size:1rem;line-height:1.55}
+.status{display:inline-flex;align-items:center;gap:.5rem;color:var(--ivory)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.status.is-open::before{background:#7BC59A;box-shadow:0 0 0 4px rgba(123,197,154,.18)}
+@media (max-width:640px){
+.hero{padding-top:5.5rem;min-height:auto}
+.curtain{--open:.11}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.curtain{animation-duration:1ms;animation-delay:0s}
+}
+/* sections */
+.sec{padding-block:clamp(4.5rem,9vw,7.5rem)}
+.sec-alt{background:var(--panel);border-block:1px solid var(--line-soft)}
+.sec-head{text-align:center;max-width:40rem;margin:0 auto clamp(2.5rem,5vw,3.75rem)}
+.sec-head h2{font:italic 500 clamp(2.1rem,4.6vw,3.2rem)/1.1 var(--serif);margin-bottom:1rem}
+.sec-head p{color:var(--muted);margin-top:1.1rem}
+/* banquet menu card */
+.menu-card{position:relative;max-width:900px;margin-inline:auto;padding:clamp(2.25rem,6vw,4.5rem) clamp(1.5rem,6vw,4.5rem);
+border:1px solid var(--line);outline:1px solid var(--line-soft);outline-offset:7px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0))}
+.flourish{position:absolute;width:clamp(70px,12vw,120px);height:auto;color:var(--gold);pointer-events:none}
+.flourish.tl{top:-14px;left:-14px}
+.flourish.br{bottom:-14px;right:-14px;transform:rotate(180deg)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:2.1rem clamp(2rem,6vw,5rem)}
+.dish-group{margin-bottom:2.1rem}
+.dish-group:last-child{margin-bottom:0}
+.dish-group h3{display:inline-block;font:italic 700 1.4rem/1.2 var(--serif);color:var(--gold);padding-bottom:.3rem;margin-bottom:.6rem;border-bottom:1px solid var(--line)}
+.dish-group ul{list-style:none;margin:0;padding:0;font-size:1.1875rem;line-height:1.6}
+.dish-group p{font-size:1.1875rem}
+.dish-group .note{color:var(--muted);font-size:1rem;margin-top:.15rem}
+@media (max-width:640px){.menu-cols{grid-template-columns:1fr}}
+/* packages table */
+.pk-wrap{max-width:980px;margin-inline:auto}
+.pk{width:100%;border-collapse:separate;border-spacing:0;font-size:1.0625rem}
+.pk th,.pk td{padding:.8rem .75rem;text-align:center;border-bottom:1px solid var(--line-soft)}
+.pk th[scope=row]{text-align:left;font-weight:400;color:var(--ivory)}
+.pk thead th{vertical-align:bottom;padding-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.pk .price{display:block;font:400 clamp(1.35rem,2.6vw,2rem)/1 var(--display);letter-spacing:.02em;white-space:nowrap}
+.pk .per{display:block;font-size:.9rem;color:var(--muted);margin-top:.35rem;font-weight:400}
+.pk .grp th{text-align:left;font:italic 700 1.25rem/1.2 var(--serif);color:var(--gold);padding-top:2rem;border-bottom:1px solid var(--line)}
+.pk td{color:var(--ivory)}
+.pk .yes svg{width:20px;height:20px;color:var(--gold);vertical-align:middle}
+.pk .no{color:rgba(169,157,137,.45)}
+.pk .best{background:rgba(212,175,90,.07)}
+.pk thead .best{border-radius:14px 14px 0 0}
+.pk tfoot td{border-bottom:0;padding-top:1.4rem}
+.pk tfoot .best{border-radius:0 0 14px 14px;padding-bottom:1.2rem}
+.pk-pick{font:500 1rem/1.2 var(--serif);min-height:2.6rem;padding:.55rem 1.1rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory);cursor:pointer;white-space:nowrap}
+.pk-pick:hover{border-color:var(--gold);color:var(--gold-hi)}
+.best .pk-pick{background:var(--foil);color:#1A1209;border-color:transparent}
+.pk-note{color:var(--muted);text-align:center;margin-top:1.6rem;font-size:1rem}
+.pk-mob{display:none}
+@media (max-width:700px){
+.pk{font-size:1rem;table-layout:fixed}
+.pk col.lbl{width:38%}
+.pk th,.pk td{padding:.7rem .2rem}
+.pk th[scope=row]{padding-left:0;line-height:1.35}
+.pk .price{font-size:.92rem;letter-spacing:0}
+.pk .cur,.pk .per{display:none}
+.pk thead .best{border-radius:10px 10px 0 0}
+.pk tfoot{display:none}
+.pk tbody:last-of-type tr:last-child td.best{border-radius:0 0 10px 10px}
+.pk .yes svg{width:18px;height:18px}
+.pk-mob{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1.6rem}
+.pk-mob .pk-pick{width:100%;min-height:2.9rem}
+.pk-mob .pk-pick[data-pk="15000"]{background:var(--foil);color:#1A1209;border-color:transparent}
+}
+/* every day */
+.daily{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start}
+.daily h2{font:italic 500 clamp(2.1rem,4.6vw,3.2rem)/1.1 var(--serif);margin-bottom:1.2rem}
+.daily p{max-width:36rem}
+.daily p+p{margin-top:1rem}
+.dishes{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem;padding:0;list-style:none}
+.dishes li{border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;font-size:1.0625rem}
+.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+.facts dt,.facts dd{padding:.85rem 0;border-bottom:1px solid var(--line-soft)}
+.facts dt{color:var(--muted);padding-right:1.5rem}
+.facts dd{margin:0}
+@media (max-width:820px){.daily{grid-template-columns:1fr}}
+/* reviews */
+.score{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.1rem;color:var(--ivory)}
+.score b{font:400 2.4rem/1 var(--display);color:var(--gold)}
+.stars{position:relative;display:inline-flex;color:rgba(212,175,90,.25)}
+.stars .fill{position:absolute;inset:0 auto 0 0;display:inline-flex;overflow:hidden;color:var(--gold);white-space:nowrap}
+.stars svg{width:18px;height:18px;flex:none;margin-right:2px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.5rem,4vw,3rem) clamp(2rem,5vw,4rem);max-width:980px;margin-inline:auto}
+.review{margin:0;padding-left:1.4rem;border-left:2px solid var(--gold-lo)}
+.review blockquote{margin:0;font:italic 400 1.3rem/1.5 var(--serif)}
+.review figcaption{margin-top:.8rem;color:var(--muted);font-size:1rem}
+.review figcaption span{color:var(--ivory)}
+.more{text-align:center;margin-top:3rem}
+@media (max-width:700px){.reviews{grid-template-columns:1fr}}
+/* booking + contacts */
+.book{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start}
+.book h2{font:italic 500 clamp(2.1rem,4.6vw,3.2rem)/1.1 var(--serif);margin-bottom:.9rem}
+.book .intro{color:var(--muted);margin-bottom:2rem;max-width:32rem}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.25rem}
+.field{display:grid;gap:.4rem}
+.field.full{grid-column:1/-1}
+.field label{font-size:1rem;color:var(--muted)}
+.field input,.field select{width:100%;min-height:3.1rem;padding:.65rem .9rem;border-radius:10px;border:1px solid var(--line);background:var(--panel-2);color:var(--ivory);font:400 1.0625rem/1.3 var(--serif);color-scheme:dark}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,90,.22)}
+.estimate{grid-column:1/-1;min-height:1.6em;color:var(--gold-hi);font-size:1.125rem}
+.form .btn{grid-column:1/-1;justify-self:start}
+.form .hint{grid-column:1/-1;color:var(--muted);font-size:.95rem;margin-top:-.2rem}
+.contact h3{font:italic 700 1.4rem/1.2 var(--serif);color:var(--gold);margin-bottom:1.2rem}
+.contact dl{margin:0}
+.contact dt{color:var(--muted);font-size:1rem}
+.contact dd{margin:.15rem 0 1.15rem}
+.contact dd a{text-decoration:none}
+.contact dd a:hover{text-decoration:underline}
+.contact .btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+.map{margin-top:clamp(3rem,6vw,4.5rem);border:1px solid var(--line);border-radius:16px;overflow:hidden;height:min(420px,70vw)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.85) sepia(.35) brightness(.82) contrast(1.05)}
+@media (max-width:860px){.book{grid-template-columns:1fr}}
+@media (max-width:520px){.form{grid-template-columns:1fr}}
+/* footer */
+.foot{padding:3.5rem 0 3rem;text-align:center;border-top:1px solid var(--line-soft);color:var(--muted);font-size:1rem}
+.foot .brand{display:inline-block;font-size:2rem;margin-bottom:.6rem}
+.foot p+p{margin-top:.3rem}
+.foot .rule{margin-block:1.4rem}
+/* mobile action bar */
+.bar{display:none}
+@media (max-width:700px){
+body{padding-bottom:76px}
+.bar{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(17,13,9,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line-soft)}
+.bar .btn{min-height:2.9rem;padding-inline:.8rem}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l4.8 4.8L19.5 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.4a12.5 12.5 0 0 0 6.3 6.3l1.4-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.6-.6.9-.6h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6a6.6 6.6 0 0 0 3 2.6c.3.1.5.1.6 0l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.2.4.4 0 .5-.2 1.1-.8 1.5-.6.4-1.5.6-2.6.2a9.8 9.8 0 0 1-4.9-4.3c-.7-1.200-.8-2.4-.4-3.2z" fill="currentColor"/></symbol>
+<symbol id="i-flourish" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M14 118V46C14 28 28 14 46 14h72"/><path d="M46 14c-14 6-17 22-5 27 9 4 15-6 8-11"/><path d="M14 46c6-14 22-17 27-5 4 9-6 15-11 8"/><path d="M24 24c4 4 8 5 12 4"/><path d="M24 24c4 4 5 8 4 12"/></g><g fill="currentColor"><path d="M70 14c6-6 13-7 19-2-6 6-13 6-19 2z"/><path d="M14 70c-6 6-7 13-2 19 6-6 6-13 2-19z"/><circle cx="24" cy="24" r="3"/><path d="M98 14l5-3.5 5 3.5-5 3.5z"/><path d="M14 98l-3.5 5 3.5 5 3.5-5z"/></g></symbol>
+</svg>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top" aria-label="Orazali, наверх">ORAZALI</a>
+<nav class="nav" aria-label="Разделы">
+<a href="#menu">Банкетное меню</a>
+<a href="#packages">Пакеты</a>
+<a href="#daily">Ресторан</a>
+<a href="#reviews">Отзывы</a>
+<a href="#contacts">Контакты</a>
+</nav>
+<a class="top-phone" href="tel:+77076371737">+7 707 637 17 37</a>
+</div>
+</header>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+<div class="valance" aria-hidden="true"></div>
+<div class="curtain l" aria-hidden="true"></div>
+<div class="curtain r" aria-hidden="true"></div>
+<div class="hero-in">
+<h1 id="hero-title" class="wordmark"><span class="foil"><span class="q">«</span>ORAZALI<span class="q">»</span></span></h1>
+<p class="kind">Ресторан и банкетный зал</p>
+<div class="rule" aria-hidden="true"><i></i></div>
+<p class="lede">Тои, юбилеи и семейные праздники на&nbsp;150&nbsp;гостей. Банкетное меню — <b>от&nbsp;11&nbsp;000&nbsp;₸ с&nbsp;человека</b>, торт и&nbsp;фуршет в&nbsp;подарок.</p>
+<div class="cta">
+<a class="btn btn-gold" href="#booking">Забронировать дату</a>
+<a class="btn btn-line" href="#menu">Посмотреть меню</a>
+</div>
+<p class="hero-meta">
+<span class="status" id="status">Ежедневно с 10:00 до 23:00</span><br>
+ул. Кенена Азербаева, 109л, с. Аскара Токпанова
+</p>
+</div>
+</section>
+<section class="sec" id="menu" aria-labelledby="menu-title">
+<div class="wrap">
+<div class="sec-head">
+<h2 id="menu-title" class="foil">Банкетное меню</h2>
+<div class="rule" aria-hidden="true"><i></i></div>
+<p>Это меню входит в каждый пакет. В пакете за 11&nbsp;000&nbsp;₸ — два вида горячих блюд и&nbsp;четыре салата на&nbsp;выбор.</p>
+</div>
+<div class="menu-card">
+<svg class="flourish tl" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-flourish"/></svg>
+<svg class="flourish br" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-flourish"/></svg>
+<div class="menu-cols">
+<div>
+<div class="dish-group">
+<h3>Горячие блюда</h3>
+<ul>
+<li>Бешбармак</li>
+<li>Манты</li>
+<li>Сірне</li>
+<li>Мясо по-тайски</li>
+<li>Дапанджи</li>
+</ul>
+<p class="note">5 видов, в пакете за 11&nbsp;000&nbsp;₸ — 2 вида</p>
+</div>
+<div class="dish-group">
+<h3>Салаты</h3>
+<p>5 видов на выбор</p>
+<p class="note">в пакете за 11&nbsp;000&nbsp;₸ — 4 вида</p>
+</div>
+<div class="dish-group">
+<h3>Напитки</h3>
+<p>Кола, минеральная вода, натуральный сок</p>
+</div>
+</div>
+<div>
+<div class="dish-group">
+<h3>Холодная закуска</h3>
+<ul>
+<li>Конское ассорти</li>
+<li>Куриное ассорти</li>
+<li>«Оригинал»</li>
+<li>Рыбное ассорти</li>
+<li>Самса</li>
+</ul>
+</div>
+<div class="dish-group">
+<h3>Фрукты</h3>
+<p>По сезону</p>
+</div>
+<div class="dish-group">
+<h3>Сладости</h3>
+<p>Пирожное, конфеты</p>
+</div>
+<div class="dish-group">
+<h3>Хлебная корзина</h3>
+<p>Лепёшки, баурсаки</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec sec-alt" id="packages" aria-labelledby="pk-title">
+<div class="wrap">
+<div class="sec-head">
+<h2 id="pk-title" class="foil">Пакеты и подарки</h2>
+<div class="rule" aria-hidden="true"><i></i></div>
+<p>Цена в тенге за одного гостя. Подарки входят в&nbsp;стоимость пакета.</p>
+</div>
+<div class="pk-wrap">
+<table class="pk">
+<caption class="sr">Сравнение банкетных пакетов: состав меню и подарки</caption>
+<colgroup><col class="lbl"><col><col><col><col></colgroup>
+<thead>
+<tr>
+<td></td>
+<th scope="col"><span class="price">11 000<span class="cur"> ₸</span></span><span class="per">с человека</span></th>
+<th scope="col"><span class="price">12 000<span class="cur"> ₸</span></span><span class="per">с человека</span></th>
+<th scope="col"><span class="price">13 000<span class="cur"> ₸</span></span><span class="per">с человека</span></th>
+<th scope="col" class="best"><span class="price foil">15 000<span class="cur"> ₸</span></span><span class="per">с человека</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="grp"><th scope="rowgroup" colspan="5">Меню</th></tr>
+<tr><th scope="row">Горячих блюд, видов</th><td>2</td><td>5</td><td>5</td><td class="best">5</td></tr>
+<tr><th scope="row">Салатов на выбор</th><td>4</td><td>5</td><td>5</td><td class="best">5</td></tr>
+<tr><th scope="row">Холодная закуска, фрукты, напитки, сладости, хлеб</th>
+<td class="yes"><svg><use href="#i-check"/></svg><span class="sr">есть</span></td>
+<td class="yes"><svg><use href="#i-check"/></svg><span class="sr">есть</span></td>
+<td class="yes"><svg><use href="#i-check"/></svg><span class="sr">есть</span></td>
+<td class="yes best"><svg><use href="#i-check"/></svg><span class="sr">есть</span></td></tr>
+</tbody>
+<tbody id="gifts">
+<tr class="grp"><th scope="rowgroup" colspan="5">В подарок</th></tr>
+<!-- 1 = есть, 0 = нет; порядок столбцов: 11 000, 12 000, 13 000, 15 000 -->
+<tr data-g="1111"><th scope="row">Торт</th></tr>
+<tr data-g="1111"><th scope="row">Фуршет</th></tr>
+<tr data-g="1011"><th scope="row">Аппаратура</th></tr>
+<tr data-g="1011"><th scope="row">Свет и музыка</th></tr>
+<tr data-g="1011"><th scope="row">LED-экран</th></tr>
+<tr data-g="0011"><th scope="row">Видеооператор</th></tr>
+<tr data-g="0001"><th scope="row">Тамада</th></tr>
+<tr data-g="0001"><th scope="row">Танцовщица</th></tr>
+</tbody>
+<tfoot>
+<tr>
+<td></td>
+<td><button class="pk-pick" type="button" data-pk="11000">Выбрать</button></td>
+<td><button class="pk-pick" type="button" data-pk="12000">Выбрать</button></td>
+<td><button class="pk-pick" type="button" data-pk="13000">Выбрать</button></td>
+<td class="best"><button class="pk-pick" type="button" data-pk="15000">Выбрать</button></td>
+</tr>
+</tfoot>
+</table>
+<div class="pk-mob">
+<button class="pk-pick" type="button" data-pk="11000">Выбрать 11 000 ₸</button>
+<button class="pk-pick" type="button" data-pk="12000">Выбрать 12 000 ₸</button>
+<button class="pk-pick" type="button" data-pk="13000">Выбрать 13 000 ₸</button>
+<button class="pk-pick" type="button" data-pk="15000">Выбрать 15 000 ₸</button>
+</div>
+<p class="pk-note">Зал вмещает до 150 гостей. Точный состав меню и свободные даты уточняйте у&nbsp;администратора.</p>
+</div>
+</div>
+</section>
+<section class="sec" id="daily" aria-labelledby="daily-title">
+<div class="wrap daily">
+<div>
+<h2 id="daily-title" class="foil">Каждый день</h2>
+<p>Ресторан открыт ежедневно с&nbsp;10:00 до&nbsp;23:00. Приходите пообедать, поужинать с&nbsp;семьёй или забрать еду с&nbsp;собой. Казахская и&nbsp;восточная кухня, средний чек около 7&nbsp;000&nbsp;₸.</p>
+<p>Столик можно забронировать по телефону или в&nbsp;WhatsApp.</p>
+<ul class="dishes" aria-label="Блюда в меню ресторана">
+<li>Бешбармак</li>
+<li>Манты</li>
+<li>Чебуреки</li>
+<li>Жареная рыба</li>
+<li>Салаты</li>
+<li>Наггетсы</li>
+<li>Чай с собой</li>
+</ul>
+</div>
+<dl class="facts">
+<dt>Зал</dt><dd>До 150 мест</dd>
+<dt>Парковка</dt><dd>80 мест, платная</dd>
+<dt>Оплата</dt><dd>Карта, QR-код, наличные</dd>
+<dt>Навынос</dt><dd>Да, можно заказать</dd>
+<dt>Wi-Fi</dt><dd>Для гостей</dd>
+<dt>Остановка</dt><dd>«Достык», 90 м</dd>
+</dl>
+</div>
+</section>
+<section class="sec sec-alt" id="reviews" aria-labelledby="rv-title">
+<div class="wrap">
+<div class="sec-head">
+<h2 id="rv-title" class="foil">Отзывы гостей</h2>
+<div class="rule" aria-hidden="true"><i></i></div>
+<div class="score">
+<b>4,7</b>
+<span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><span class="fill" style="width:94%"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span></span>
+<span>31 оценка в 2ГИС</span>
+</div>
+</div>
+<div class="reviews">
+<figure class="review">
+<blockquote lang="ru">Отличная кухня, классные официанты. Всё на высшем уровне</blockquote>
+<figcaption><span>Elaman Musabekov</span>, 8 ноября 2026</figcaption>
+</figure>
+<figure class="review">
+<blockquote lang="kk">Іші кең, акустикасы жақсы, тамақтары дәмді. Қызмет көрсету сапасы жақсы</blockquote>
+<figcaption><span>Жанар Барлыкбаева</span>, 1 ноября 2026</figcaption>
+</figure>
+<figure class="review">
+<blockquote lang="kk">…Тамақтары өте дәмді! Қонақтарымыз мақтап қайтты.</blockquote>
+<figcaption><span>Nazerke Amantaikyzy</span>, 1 ноября 2026</figcaption>
+</figure>
+<figure class="review">
+<blockquote lang="ru">Очень уютный ресторан</blockquote>
+<figcaption><span>Aigul</span>, 5 ноября 2026</figcaption>
+</figure>
+</div>
+<p class="more"><a href="https://2gis.kz/almaty/firm/70000001118613151/tab/reviews" target="_blank" rel="noopener">Читать все отзывы в 2ГИС</a></p>
+</div>
+</section>
+<section class="sec" id="contacts" aria-labelledby="book-title">
+<div class="wrap">
+<div class="book">
+<div id="booking">
+<h2 id="book-title" class="foil">Забронировать дату</h2>
+<p class="intro">Заполните заявку — откроется WhatsApp с готовым сообщением для администратора. Останется только нажать «Отправить».</p>
+<form class="form" id="form" novalidate>
+<div class="field">
+<label for="f-date">Дата</label>
+<input id="f-date" name="date" type="date">
+</div>
+<div class="field">
+<label for="f-guests">Количество гостей</label>
+<input id="f-guests" name="guests" type="number" inputmode="numeric" min="1" max="150" placeholder="например, 80">
+</div>
+<div class="field full">
+<label for="f-pk">Пакет</label>
+<select id="f-pk" name="package">
+<option value="">Пока не выбрали</option>
+<option value="11000">11 000 ₸ с человека</option>
+<option value="12000">12 000 ₸ с человека</option>
+<option value="13000">13 000 ₸ с человека</option>
+<option value="15000">15 000 ₸ с человека</option>
+<option value="table">Просто столик в ресторане</option>
+</select>
+</div>
+<div class="field">
+<label for="f-event">Повод</label>
+<input id="f-event" name="event" type="text" placeholder="той, юбилей, день рождения…">
+</div>
+<div class="field">
+<label for="f-name">Ваше имя</label>
+<input id="f-name" name="name" type="text" autocomplete="name">
+</div>
+<p class="estimate" id="estimate" aria-live="polite"></p>
+<button class="btn btn-gold" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Отправить заявку в WhatsApp</button>
+<p class="hint">Или позвоните: <a href="tel:+77076371737">+7 707 637 17 37</a></p>
+</form>
+</div>
+<div class="contact">
+<h3>Контакты</h3>
+<dl>
+<dt>Адрес</dt>
+<dd>ул. Кенена Азербаева, 109л<br>с. Аскара Токпанова, Илийский район, Алматинская область</dd>
+<dt>Часы работы</dt>
+<dd>Ежедневно с 10:00 до 23:00</dd>
+<dt>Телефоны</dt>
+<dd><a href="tel:+77076371737">+7 707 637 17 37</a><br><a href="tel:+77029208550">+7 702 920 85 50</a></dd>
+<dt>Instagram</dt>
+<dd><a href="https://instagram.com/orazali_restaurant" target="_blank" rel="noopener">@orazali_restaurant</a></dd>
+</dl>
+<div class="btns">
+<a class="btn btn-line" href="https://wa.me/77076371737" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Написать в WhatsApp</a>
+<a class="btn btn-line" href="https://go.2gis.com/QPhY6" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+</div>
+</div>
+</div>
+<div class="map">
+<iframe title="Карта: ресторан Orazali, ул. Кенена Азербаева, 109л" loading="lazy"
+src="https://www.openstreetmap.org/export/embed.html?bbox=76.8503%2C43.3885%2C76.8663%2C43.3975&amp;layer=mapnik&amp;marker=43.392991%2C76.858334"></iframe>
+</div>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<a class="brand" href="#top">ORAZALI</a>
+<p>Ресторан и банкетный зал</p>
+<div class="rule" aria-hidden="true"><i></i></div>
+<p>ул. Кенена Азербаева, 109л, с. Аскара Токпанова</p>
+<p><a href="tel:+77076371737">+7 707 637 17 37</a>, <a href="tel:+77029208550">+7 702 920 85 50</a></p>
+<p style="margin-top:1.2rem">© 2026 Orazali</p>
+</div>
+</footer>
+<div class="bar">
+<a class="btn btn-line" href="tel:+77076371737"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+<a class="btn btn-gold" href="https://wa.me/77076371737" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+<script>
+(function(){
+var WA = '77076371737';
+var PRICES = {'11000':11000,'12000':12000,'13000':13000,'15000':15000};
+var nbsp = ' ';
+function money(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, nbsp) + nbsp + '₸'; }
+// Gift checkmarks from data-g
+document.querySelectorAll('#gifts tr[data-g]').forEach(function(tr){
+tr.getAttribute('data-g').split('').forEach(function(v, i){
+var td = document.createElement('td');
+if (i === 3) td.className = 'best';
+if (v === '1'){
+td.className += ' yes';
+td.innerHTML = '<svg aria-hidden="true"><use href="#i-check"/></svg><span class="sr">есть</span>';
+} else {
+td.className += ' no';
+td.innerHTML = '<span aria-hidden="true">—</span><span class="sr">нет</span>';
+}
+tr.appendChild(td);
+});
+});
+// Open / closed now (Kazakhstan, UTC+5)
+var st = document.getElementById('status');
+var kz = new Date(Date.now() + 5 * 3600 * 1000);
+var h = kz.getUTCHours();
+if (h >= 10 && h < 23){
+st.textContent = 'Сейчас открыто, работаем до 23:00';
+st.classList.add('is-open');
+} else {
+st.textContent = 'Сейчас закрыто, откроемся в 10:00';
+}
+// Form
+var form = document.getElementById('form');
+var fDate = document.getElementById('f-date');
+var fGuests = document.getElementById('f-guests');
+var fPk = document.getElementById('f-pk');
+var est = document.getElementById('estimate');
+var today = kz.toISOString().slice(0,10);
+fDate.min = today;
+function updateEstimate(){
+var g = parseInt(fGuests.value, 10);
+var p = PRICES[fPk.value];
+if (g > 0 && p){
+est.textContent = 'Ориентировочно ' + money(g * p) + ' за ' + g + ' ' + plural(g, 'гостя', 'гостей', 'гостей');
+} else {
+est.textContent = '';
+}
+}
+function plural(n, one, few, many){
+var m10 = n % 10, m100 = n % 100;
+if (m10 === 1 && m100 !== 11) return one;
+if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+return many;
+}
+fGuests.addEventListener('input', updateEstimate);
+fPk.addEventListener('change', updateEstimate);
+document.querySelectorAll('.pk-pick').forEach(function(b){
+b.addEventListener('click', function(){
+fPk.value = b.getAttribute('data-pk');
+updateEstimate();
+document.getElementById('booking').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+setTimeout(function(){ fDate.focus({preventScroll:true}); }, 500);
+});
+});
+form.addEventListener('submit', function(e){
+e.preventDefault();
+var lines = ['Здравствуйте! Хочу забронировать в Orazali.'];
+if (fDate.value){
+var d = fDate.value.split('-');
+lines.push('Дата: ' + d[2] + '.' + d[1] + '.' + d[0]);
+}
+if (fGuests.value) lines.push('Гостей: ' + fGuests.value);
+var opt = fPk.options[fPk.selectedIndex];
+if (fPk.value) lines.push('Пакет: ' + opt.text);
+var ev = document.getElementById('f-event').value.trim();
+if (ev) lines.push('Повод: ' + ev);
+var nm = document.getElementById('f-name').value.trim();
+if (nm) lines.push('Имя: ' + nm);
+window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+});
+})();
+</script>
+</body>
+</html>
